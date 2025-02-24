@@ -193,7 +193,7 @@ export const Home = () =>{
 
             <section className="site-section-container mt-5 pt-5">
               <div className="container-lg">
-                <div className="light-background2 p-5 border-radius-10px">
+                <div className="light-background2 px-3 pb-3 border-radius-10px">
                   <div className="row g-4 justify-content-center align-center">
                     <div className="col-lg-5">
                       <div className="row g-4">
@@ -231,7 +231,7 @@ export const Home = () =>{
                                 <p className="sm-text font-bold">Mental Health Disorder</p>
                                 <p className="light-text-2">Approximately 20%–30% of Nigerians, equating to around 40–60 million people, are believed to suffer from mental health disorders.</p>
                               </div>
-                            </div>
+                            </div> 
                           </div>
 
                           <div className="col-md-6">
@@ -293,7 +293,7 @@ export const Home = () =>{
 
             <section className="site-section-container">
               <div className="light-background2">
-                <div className="container-lg p-5">
+                <div className="container-lg py-5">
                   <div className="text-center">
                     <p className="sm-text font-bold site-primary-text ">WHY CHOOSE SPRINGFEILD</p>
                     <p className="light-text-2">Our goal at springfield to improve mental health of our patients</p>

@@ -201,7 +201,7 @@ export const Navbar = () =>{
 
                 <div onClick={toggleClientSidebar}>
                   <FontAwesomeIcon className='sm-text site-primary-text font-weight-700' icon={faBarsStaggered}/>
-                // </div>
+                </div>
               </div>
             </div>
 

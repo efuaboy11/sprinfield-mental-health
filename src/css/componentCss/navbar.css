@@ -86,7 +86,7 @@
 
 /* sidebar */
 .client-sidebar{
-  top: 120px;
+  top: 85px;
   width: 100%;
   height: 100%;
   background-color: #5B34B0;
@@ -197,6 +197,9 @@
       transform: translateX(0px);
   }
 
+  .navbar-header{
+    display: none;
+  }
   
   .client-close-sidebar{
       transform: translateX(-100%)

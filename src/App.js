@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { AuthProvider } from "./context/AuthContext";
+import ScrollToTop from "./component/scrollToTop";
+import { Home } from "./pages/information/home";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <AuthProvider>
+          <ScrollToTop/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+
+        </AuthProvider>
+      </BrowserRouter>
+      
     </div>
   );
 }

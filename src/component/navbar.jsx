@@ -23,6 +23,7 @@ export const Navbar = () =>{
     showSidebar, 
     setShowSidebar,
     toggleClientSidebar,
+    OnbodyClick
 
 
 
@@ -102,6 +103,7 @@ export const Navbar = () =>{
 
   useEffect(() =>{
     setShowSidebar(false)
+    OnbodyClick()
 
   }, [])
 
@@ -212,7 +214,7 @@ export const Navbar = () =>{
                   {helpDropdown &&
                     <ul className={`nav-sublink-container `}>
                       <li className='mb-3'>
-                        <Link to='/forex/' className='nav-sublink'>
+                        <Link to='/crisis-resources/' className='nav-sublink'>
                           <p>Crisis Resources</p>                
                         </Link>
                       </li>
@@ -475,8 +477,8 @@ export const Navbar = () =>{
 
                   <div>
                     <ul className={` client-sidebar-dropdown-bg ${sidebarAssetDropdown ? "client-sidebar-dropdown-slide-in" : "client-sidebar-dropdown-slide-out"}`}>
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/forex/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/forex/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/crisis-resources/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/crisis-resources/">
                           <div className="d-flex ms-3 py-2">
                             <p>Crisis Resources</p> 
                           </div>

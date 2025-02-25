@@ -53,7 +53,7 @@ export const Footer = () =>{
               <div>
                 <p className="sm-text light-text-2 font-weight-700 pb-3">GET HELP</p>
                 <div className='my-2'>
-                  <Link to='/forex/' className="footer-links">Crisis Resources</Link>
+                  <Link to='/crisis-resources/' className="footer-links">Crisis Resources</Link>
                 </div>
 
                 <div className='my-2'>
